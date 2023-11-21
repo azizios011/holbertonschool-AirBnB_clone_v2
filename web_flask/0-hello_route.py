@@ -1,22 +1,13 @@
 #!/usr/bin/python3
-
-
+""" a Flask web application """
 from flask import Flask
-
-""" 
-    a Flask web application
-
-"""
 
 
 app = Flask(__name__)
 
 
 @app.route("/")
-"""
-a route to display the text
-
-"""
+""" a route to display the text """
 def hello_hbnb():
     return 'Hello HBNB'
 
